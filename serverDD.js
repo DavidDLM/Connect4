@@ -123,10 +123,10 @@ def on_finish(data):
 function on_finish(data) {
   const game_id = data.game_id;
   const player_turn_id = data.player_turn_id;
-  const winnerTurnID = data.winner_turn_id;
+  const winner_turn_id = data.winner_turn_id;
   const board = data.board;
   // Print the final board state or perform any cleanup tasks
-  console.log("Winner: ", winnerTurnID);
+  console.log("Winner: ", winner_turn_id);
   console.log(board);
   // Perform any necessary cleanup or actions when the game ends
   socket.emit('player_ready', {
